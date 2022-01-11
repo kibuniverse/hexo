@@ -56,9 +56,9 @@ pnpm add module -s
 
 > 使用 npm 安装
 
-![image-20211206160538001](/Users/yankaizhi/Library/Application Support/typora-user-images/image-20211206160538001.png)
+![image-20211206160538001](../images/image-20211206160538001.png)
 
-![image-20211206160630851](/Users/yankaizhi/Library/Application Support/typora-user-images/image-20211206160630851.png)
+![image-20211206160630851](../images/image-20211206160630851.png)
 
 可以看到我们的项目依赖中只有一个 express, 但是执行 npm i 之后 node_modules 中竟然有这么多的包，对于开发来说本身问题并不大，因为 node_modules 只是安装一次，但是 node 的寻找包的规则，这些包都是可以在项目中直接被引用的，也就是说我们在项目中引用了未在 package.json 中声明的包，这显然是不安全的，这种情况也被称为幽灵依赖。
 
@@ -66,11 +66,11 @@ pnpm add module -s
 
 答案就是软链接，我们先用 pnpm 重新装一下上面的包。
 
-![image-20211206162059033](/Users/yankaizhi/Library/Application Support/typora-user-images/image-20211206162059033.png)
+![image-20211206162059033](../images/image-20211206162059033.png)
 
 可以看到 node_modules 结构非常清晰，但是这个 express 文件夹只是一个`软链接`, 它的真正存储的地方在图中的 .pnpm 文件夹中。
 
-![image-20211206162515165](/Users/yankaizhi/Library/Application Support/typora-user-images/image-20211206162515165.png)
+![image-20211206162515165](../images/image-20211206162515165.png)
 
 这样的通过软链接的设计既保证了不会出现幽灵依赖的问题，同时也能兼容 node 的寻找模块方式。
 
@@ -82,7 +82,7 @@ pnpm 有个根目录，一般都是保存在 user/.pnpm-store 下，pnpm 通过�
 
 这个是项目 pnpm-t 中 express 中的 index.js 的信息
 
-![image-20211206220441600](/Users/yankaizhi/Library/Application Support/typora-user-images/image-20211206220441600.png)
+![image-20211206220441600](../images/image-20211206220441600.png)
 
 我们可以看到当前的 index.js inode 节点为 1245537 并且有 9 个相同的硬链接
 
@@ -94,7 +94,7 @@ pnpm init -y
 pnpm add express
 ```
 
-![image-20211206220844347](/Users/yankaizhi/Library/Application Support/typora-user-images/image-20211206220844347.png)
+![image-20211206220844347](../images/image-20211206220844347.png)
 
 可以看到 pnpm-t1 中 express 下的 index.js inode 节点仍为 1245537，并且这个文件的硬链接数量已经增加到了 10 个。也就是说 express 下的 index.js 实际上是被复用的。
 
