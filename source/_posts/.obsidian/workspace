@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "9ad5186f09b86f46",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4e4b25f9ddef6ca",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Typescript 逆变与协变.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0d840581f962502",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c297c52b99afc19",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f5de681dc5c4f9b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e37bd513f7e7156a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f27fe9dc972bcc63",
+    "type": "split",
+    "children": [
+      {
+        "id": "93ff3ff2f80c15ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f0f755913f2a725",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Typescript 逆变与协变.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b4e4b25f9ddef6ca",
+  "lastOpenFiles": [
+    "Typescript 逆变与协变.md",
+    "pnpm-link.md",
+    "js-closure.md"
+  ]
+}
