@@ -1,3 +1,8 @@
+---
+title: TypeScript 逆变和协变
+tag: TypeScript
+---
+
 # TypeScript 逆变和协变
 
 > 文章中所有的代码均在这里 [TS Playground - An online editor for exploring TypeScript and JavaScript](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgIImAWzgG2QbwChkTkQ5MIAuZAZzClAHNCBfQw0SWRFAEQD2TZBAAekEABNaaDNjxFSyAPTLkgcRNAfDqAX3WKkA7nCZNmAFTjAcACgCUNAG4Dgkthy7R4SZAGEBUEyLiEFIygsKKpAhwIADqRiYgTDTwOLQQroQ4EGDI0Vi4NOj5eAC8BHok5JQ0AOR58jUANGwA3JnZyJJCNGHIZRGVFNTINWACmE0VyIbGZhbWNgTICAIgtAJZAHQ4QlY1MwlM5pYAhDWLrM2sbYT1uH2dQhxgAJ4ADigAYiAAjA9WcH8PSEixKAD5kGFnu8viAAEz-QFJWTFUEQ3z+YAcLI5GC-GjfH5tHHIPFwgnwm6EPF-MpkoA)
@@ -25,20 +30,17 @@ let fn: Fn = (arg: S) => {}
 
 > 在一门程序设计语言的[类型系统](https://zh.wikipedia.org/wiki/型別系統)中，一个类型规则或者类型构造器是：
 
--   > **协变**（covariant），如果它保持了[子类型序关系≦](https://zh.wikipedia.org/wiki/子型別)。该序关系是：子类型≦基类型。
-    
+- > **协变**（covariant），如果它保持了[子类型序关系 ≦](https://zh.wikipedia.org/wiki/子型別)。该序关系是：子类型 ≦ 基类型。
 
--   > **逆变**（contravariant），如果它逆转了子类型序关系。
-    
+- > **逆变**（contravariant），如果它逆转了子类型序关系。
 
--   > **不变**（invariant），如果上述两种均不适用。
-    
+- > **不变**（invariant），如果上述两种均不适用。
 
 维基百科中的描述有点抽象，我们提取一下关键词
 
--   父/子型别
--   构造器构造
--   是否具有父/子型别关系
+- 父/子型别
+- 构造器构造
+- 是否具有父/子型别关系
 
 我们先用简单的数学模拟一下，假设我们现在有两个值 `x = -1` ， `y = -5`，x 和 y 的关系为 x > y。
 
@@ -56,7 +58,7 @@ g(x) = 1 < g(y) = 5 这就是逆变。
 
 上面只是举了一个很简单并且不够严谨的例子，主要是为了方便理解，现在我们看一下在 ts 中的实现。
 
-## TypeScript实现
+## TypeScript 实现
 
 考虑如下类型
 
@@ -114,6 +116,6 @@ Fn1 类型的子类型是什么呢？
 
 参考
 
--   [维基百科-子类型](https://zh.wikipedia.org/wiki/%E5%AD%90%E7%B1%BB%E5%9E%8B)
--   [维基百科-协变与逆变](https://zh.wikipedia.org/wiki/%E5%8D%8F%E5%8F%98%E4%B8%8E%E9%80%86%E5%8F%98#%E2%80%9C%E5%8D%8F%E5%8F%98%E2%80%9D%E4%B8%80%E8%AF%8D%E7%9A%84%E6%9D%A5%E6%BA%90)
--   [What are covariance and contravariance? | Stephan Boyer](https://www.stephanboyer.com/post/132/what-are-covariance-and-contravariance)
+- [维基百科-子类型](https://zh.wikipedia.org/wiki/%E5%AD%90%E7%B1%BB%E5%9E%8B)
+- [维基百科-协变与逆变](https://zh.wikipedia.org/wiki/%E5%8D%8F%E5%8F%98%E4%B8%8E%E9%80%86%E5%8F%98#%E2%80%9C%E5%8D%8F%E5%8F%98%E2%80%9D%E4%B8%80%E8%AF%8D%E7%9A%84%E6%9D%A5%E6%BA%90)
+- [What are covariance and contravariance? | Stephan Boyer](https://www.stephanboyer.com/post/132/what-are-covariance-and-contravariance)
