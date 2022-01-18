@@ -7,12 +7,8 @@
         "id": "b4e4b25f9ddef6ca",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Typescript 逆变与协变.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Typescript 逆变与协变.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +84,7 @@
   },
   "active": "b4e4b25f9ddef6ca",
   "lastOpenFiles": [
+    "git rebase cherry-pick.md",
     "Typescript 逆变与协变.md",
     "pnpm-link.md",
     "js-closure.md"
