@@ -1,5 +1,6 @@
 ---
 title: 浅谈 pnpm 软链接和硬链接
+date: 2021-01-01
 tag: package-manager
 ---
 

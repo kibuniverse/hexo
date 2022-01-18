@@ -1,5 +1,6 @@
 ---
 title: TypeScript 逆变和协变
+date: 2021-01-12
 tag: TypeScript
 ---
 
