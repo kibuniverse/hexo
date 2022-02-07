@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b4e4b25f9ddef6ca",
+        "id": "2ab7d26c1124503c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Typescript 逆变与协变.md",
+            "file": "ts 类型系统实现斐波那契.md",
             "mode": "source",
             "source": false
           }
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Typescript 逆变与协变.md",
+                "file": "ts 类型系统实现斐波那契.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,9 +88,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b4e4b25f9ddef6ca",
+  "active": "2ab7d26c1124503c",
   "lastOpenFiles": [
+    "ts 类型系统实现斐波那契.md",
     "Typescript 逆变与协变.md",
+    "记录一次打包报错.md",
     "pnpm-link.md",
     "js-closure.md"
   ]
