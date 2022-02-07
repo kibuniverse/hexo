@@ -94,6 +94,7 @@
     "Typescript 逆变与协变.md",
     "记录一次打包报错.md",
     "pnpm-link.md",
-    "js-closure.md"
+    "js-closure.md",
+    "git rebase cherry-pick.md"
   ]
 }
