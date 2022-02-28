@@ -1,5 +1,6 @@
 ---
 title: 使用 ts 类型系统实现斐波那契
+date: 2021-01-20
 tag: TypeScript 
 ---
 
