@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "我眼中的优秀的代码是怎样的？.md",
+            "file": "浅谈我眼中的rust生命周期.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "我眼中的优秀的代码是怎样的？.md",
+                "file": "浅谈我眼中的rust生命周期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,13 +89,14 @@
   },
   "active": "b593c8281a397879",
   "lastOpenFiles": [
+    "浅谈我眼中的rust生命周期.md",
     "我眼中的优秀的代码是怎样的？.md",
+    "Typescript 逆变与协变.md",
+    "js-closure.md",
     "记录一次打包报错.md",
     "pnpm-link.md",
-    "Typescript 逆变与协变.md",
     "未命名 1.md",
     "未命名 2.md",
-    "ts 类型系统实现斐波那契.md",
-    "js-closure.md"
+    "ts 类型系统实现斐波那契.md"
   ]
 }
