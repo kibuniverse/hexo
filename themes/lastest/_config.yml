@@ -39,7 +39,7 @@ style:
   first_screen:
     enable: true
     background_img: /images/bg.svg # You can use local image or image external link
-    description: 「 如果一个问题无解，那它可能都不成问题，而是一个事实；我们不需要解决，而是随着时间的推移来处理。」
+    description: 「 世界上只有一种英雄主义，那便是在认清生活的真相之后仍然热爱着生活。 」
 
   # Scroll style settings
   scroll:
